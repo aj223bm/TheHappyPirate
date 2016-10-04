@@ -30,14 +30,13 @@ public class Member {
 
 
     }
-   public void addBoats(Boat boat1 ){
-       if(boat1!=null){
-           boats.add(boat1);
+   public void addBoats( ){
+       boats.add(getBoat());
 
        }
 
 
-    }
+
 
     public int getNrofBoats(){
 

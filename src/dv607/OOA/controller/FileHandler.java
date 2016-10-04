@@ -18,7 +18,7 @@ public class FileHandler {
             String input;
             input = readFile();
 
-            input = input.replace(memberID + "Boats", memberID + "Boats\n" + type + "_" + size);
+            input = input.replace(memberID + "Boats", memberID + "Boats\n-" + type + "_" + size);
 
             FileOutputStream out = new FileOutputStream(path);
             out.write(input.getBytes());
@@ -238,10 +238,10 @@ public class FileHandler {
     }
 
 
-    public List<Boat> addMembersBoats(String memberID) {
-        String stringArr[] = listMembersBoats(memberID);
+    public List<Boat> addMembersBoats(Member member) {
+        String stringArr[] = listMembersBoats(member.getMemberID());
 
-        List<Boat> boats = new ArrayList<Boat>();
+        List<Boat> boats=member.getBoats();
 
         String temp[];
 

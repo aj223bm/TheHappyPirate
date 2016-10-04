@@ -29,7 +29,7 @@ public class MemberController {
 
 
     public void memberOption(boolean memberRun, Console console) {
-       currentUserBoats = fileHandler.addMembersBoats(getCurrentUser().getMemberID());
+        currentUserBoats= fileHandler.addMembersBoats(currentUser);
         while (memberRun) {
             Scanner scan = new Scanner(System.in);
            mConsole=console;
@@ -118,12 +118,13 @@ public class MemberController {
         System.out.println("Enter Boat Size: ");
         int size = scan.nextInt();
         boat.setSize(size);
-        currentUser.addBoats(boat);
+        currentUser.setBoat(boat);
+        currentUser.addBoats();
         System.out.println(currentUser.getNrofBoats());
 
 
         try {
-            if (fileHandler.registerBoat(currentUser.getMemberID(), type, size)) {
+            if (fileHandler.registerBoat(currentUser.getMemberID(),currentUser.getBoat().getType(), currentUser.getBoat().getSize())) {
 
             } else {
                 mConsole.ShowErrorMessage(1);
