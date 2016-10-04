@@ -72,8 +72,8 @@ public class SercretaryController {
             }
             /**
              *
-             * Har fastant göra detta   kan inte skriva ut alla meldelmens boat type och size utan den bara skriver ett av varje
-             *  helt krazy  Kolla på det! kan du kan lösa det
+             * Har fastant göra detta   kan inte skriva ut alla medlmens boattyper och sizer utan den bara skriver ett av varje
+             *  helt krazy  Kolla på det! kan du kanske lösa det
              *
              * */
 
