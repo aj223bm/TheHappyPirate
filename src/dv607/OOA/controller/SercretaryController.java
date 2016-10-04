@@ -72,7 +72,7 @@ public class SercretaryController {
             }
             /**
              *
-             * Har fastant göra detta   kan inte skriva ut alla medlmens boattyper och sizer utan den bara skriver ett av varje
+             * Har fastnat göra detta   kan inte skriva ut alla medlmens boattyper och sizer utan den bara skriver ett av varje
              *  helt krazy  Kolla på det! kan du kanske lösa det
              *
              * */
