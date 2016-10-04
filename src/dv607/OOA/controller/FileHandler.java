@@ -243,6 +243,7 @@ public class FileHandler {
 
         List<Boat> boats=member.getBoats();
 
+
         String temp[];
 
         for(int i=0; i<stringArr.length; i++) {
