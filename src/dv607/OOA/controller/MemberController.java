@@ -24,7 +24,6 @@ public class MemberController {
 
 
     private FileHandler fileHandler = new FileHandler();
-
     private List<Member> memberList = new ArrayList<Member>();
     private List<Boat>  currentUserBoats = new ArrayList<Boat>();
 
