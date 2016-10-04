@@ -3,6 +3,7 @@ package dv607.OOA.controller;
 import dv607.OOA.view.Console;
 import jdk.nashorn.internal.ir.WhileNode;
 
+import java.awt.*;
 import java.util.Scanner;
 
 /**
@@ -22,19 +23,30 @@ public class SercretaryController {
             console.viewSeceratyMenu();
             int choice =console.getInputInt();
             if(choice==LIST_MEMBERS_COMPACT){
-                System.out.println("LIST");
-                break;
+                listMembers();
+             continue;
             }
             else if(choice==LIST_MEMBERS_VERBOSE){
                 System.out.println("LIST VERBOSE");
+                continue;
             }
 
-            
+            else if(choice==SEE_MEMBER_INFOMATION){
+                System.out.println("See member");
+                continue;
+            }
+            else if(choice==BACK_TO_MAIN){
+                sercartyRun=false;
+            }
+
 
 
 
 
 
         }
+    }
+
+    private void listMembers() {
     }
 }
